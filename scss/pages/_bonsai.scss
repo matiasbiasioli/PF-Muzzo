@@ -1,0 +1,62 @@
+ .row-bonsai {
+    h2 {
+      margin: 10px auto;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    }
+    p {
+      margin: 10px auto;
+      font-size: larger;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }  
+    .titulo2 {
+      display: flex;
+      justify-content: right;
+    }
+    .titulo3 {
+      display: flex;
+      justify-content: center
+    }
+  
+  }
+  #cuidados-bonsai {
+    margin: 40px auto;
+    width: 100vw;
+  }
+  #imagen-fertilizacion {
+    width: 90vw;
+  }
+  .multimedia {
+    background-color: rgb(236, 232, 232);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    &-video {
+      display: flex;
+      justify-content: center;
+      margin: 20px auto; 
+      video {
+        background-color: white;
+        width: 90vw;
+        
+      }   
+    }
+  }
+  
+  @media (min-width:992px) {
+    #cuidados-bonsai {
+      width: 70vw;
+    }
+    .content-fertilizacion {
+      display: flex;
+      justify-content: space-between;
+    }
+    #imagen-fertilizacion {
+      width: fit-content;
+    }
+    .multimedia-video .video {
+      width: 60vw;
+      height: 500px;
+      margin: 40px 0px;
+    }
+  }

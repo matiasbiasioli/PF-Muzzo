@@ -1,0 +1,46 @@
+// Include any default variable overrides here (though functions won't be available)
+
+$blue: #0d6efd;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #d63384;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #198754;
+$teal: #20c997;
+$cyan: #0dcaf0;
+$gray-600: #3d3641;
+$gray-100: #dcd7d7;
+$gray-900: #555353;
+
+$primary: #813d81;
+$secondary: $gray-600;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-900;
+
+$bg-secondary: #c5c1b5;
+$love-logo: #eb0454;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+);
+
+// Aquí viene un @Extend
+
+.boxshadowed {
+  box-shadow: 6px 6px 20px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 6px 6px 20px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 6px 20px 1px rgba(0, 0, 0, 0.75);
+}

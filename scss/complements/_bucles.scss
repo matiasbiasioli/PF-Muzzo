@@ -1,0 +1,6 @@
+@for $ma from 1 to 5 {
+    .margin-#{$ma} {
+        margin: 1rem * $ma;
+    } 
+}
+

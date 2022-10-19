@@ -1,0 +1,118 @@
+// vista mobile
+
+.main__header {
+    background-color: #74ae21
+    ;
+    display: grid;
+    grid-template-areas:
+      "logo"
+      "menu"
+      "carrito";
+    gap: 10px;
+    justify-items: center;
+    border: solid 1px;
+    &__logo {
+      display: flex;
+      align-items: center;
+      padding-top: 10px;
+      color: white;
+      span {
+        color: $love-logo;
+      }
+    }
+    img {
+      width: 75px;
+    }
+    p {
+      width: 75px;
+      line-height: 1.2;
+      font-weight: bold;
+      padding-left: 5px;
+      padding-top: 5px;
+    } 
+  }
+  .nav__menu {
+    font-weight: bold;
+    list-style: none;
+    display: grid;
+    gap: 5px 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    padding: 0;
+    }
+    a{
+      color: white;
+      text-decoration: none;
+      &:hover {
+        color: rgb(213, 206, 206);
+      }
+    }
+    ul{
+      list-style: none;
+      display: none;
+      z-index: 1;
+    }
+    li:hover ul {
+      background-color: rgb(129, 61, 129);
+      display: block;
+      padding: 0px 10px;
+      border-radius: 10px;
+    }
+  .nav__usuario__carrito {
+    padding: 10px 0px;
+    &__container {
+      text-align: center;
+    }
+  }
+  #usuario {
+    padding-right: 25px;
+  }
+  #usuario,
+  #carrito,
+  #registro {
+    color: white;
+    font-weight: bold;
+    &:hover {
+      color: white
+    }
+  }
+
+//   Vista Desktop
+
+@media (min-width:992px) {
+    .main__header {
+        grid-template-areas: "logo menu carrito";
+        align-items: center;
+        height: 8rem;
+        border-style: solid;
+        img {
+          width: 95px;
+          padding-bottom: 10px;
+        }
+        p {
+          width: 120px;
+          line-height: 1.2;
+          font-size: 1.5rem;
+          padding-left: 5px;
+        }
+      }
+    
+      .nav__menu {
+        li {
+          &:hover ul {
+            position: absolute;
+          }
+        }
+        a {
+          font-size: 1.5rem;
+        }
+      }
+  
+      #usuario,
+      #carrito,
+      #registro {
+        font-size: 1.4rem;
+      }
+}

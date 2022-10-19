@@ -1,0 +1,83 @@
+// Vista mobile
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #3e3325;
+    color: blanchedalmond;
+    height: 350px;
+    &__logo {
+      display: flex;
+      padding-top: 10px;
+      img {
+        width: 75px;
+        height: 75px;
+      }
+      p {
+        color: #ffffff;
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: bold;
+        margin-top: 5px;
+        margin-left: 5px;
+        width: 80px;
+      }
+    }
+  }
+  
+  .footer__contactanos h2 {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  
+  .footer__contactanos h3 {
+    font-size: 1.2rem;
+  }
+  
+  .footer__iconos__redes {
+    text-align: center;
+    font-size: 1.4rem;
+    i {
+      font-size: 1.6rem;
+      padding-bottom: 10px;
+      margin: 5px 0px;
+    }
+  }
+
+//   vista desktop
+
+@media (min-width:992px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 150px;
+    &__logo {
+      img {
+      margin: auto;
+      width: 100px;
+      height: 100px;
+      }
+      p {
+      font-size: 1.4rem;
+      line-height: 1.1;
+      width: 120px;
+      }
+    }
+  }
+  .footer__contactanos h2 {
+    font-size: 2rem;
+  }
+  .footer__iconos__redes {
+    h2 {
+      font-size: 2rem;
+    }
+    i {
+      font-size: 2rem;
+    }
+  }
+}
+

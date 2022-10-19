@@ -1,0 +1,226 @@
+  /* Vista Mobile */
+  
+  .nav__whatsapp {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 2;
+    img {
+        width: 40px;
+    }
+    &:hover {
+      transform: scale(1.3);
+      transition: 0.3s;
+      cursor: pointer;
+    }   
+  }
+  
+  /* main movile */
+  
+  .main__text__uno {
+    animation: move 3s ease;
+  }
+
+  .main__text__uno,
+  .main__text__dos,
+  .main__text__tres {
+    line-height: 1;
+    h1 {
+      font-size: 1.3rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translate(300px);
+    }
+  }
+  
+  .btn__color {
+    background-color: $primary;
+    color: white;
+    border: black;
+    font-size: 0.9rem;
+    border-radius: 40px;
+    padding: 2.5px 10px;
+  }
+  
+  /* Cards */
+  
+  .productos {
+    background-color: rgb(236, 232, 232);
+  }
+  
+  .carousel-inner,
+  .products__title {
+    text-align: center;
+    background-color: rgb(236, 232, 232);
+    text-decoration: underline;
+  }
+  
+  .products__title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-top: 20px;
+    font-size: 2rem;
+  }
+  
+  .card {
+    @extend .boxshadowed;
+    margin: auto;
+    max-width: 70%;
+    border: black;
+    height: 250px;
+    &__wrapper {
+      display: flex;
+      background-color: rgb(236, 232, 232);
+      margin: 40px 0px;
+    }
+    &:not(:first-child) {
+      display: none;
+    }
+  }
+
+  .card-body {
+    .card-title,
+    .card-text {
+      font-weight: bold;
+    }
+  }
+  
+  .image__wrapper img {
+    width: 100%;
+    height: 120px;
+  }
+  
+  .btn__color__product {
+    background-color: $primary;
+    color: white;
+    font-size: 15px;
+  }
+  
+  /* multimedia mobile */
+  
+  .audio {
+    width: 60vw;
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* Aqui comienza vista Desktop */
+  
+  @media (min-width: 992px) {
+    .nav__whatsapp {
+      right: 20px;
+      bottom: 20px;
+      img {
+        width: 60px;
+      }
+    }
+
+    /* Carousel Main desktop */
+    
+    .main__text__uno {
+      width: 450px;
+      animation: move 3s ease;
+      position: absolute;
+      bottom: 200px;
+    }
+  
+    .main__text__uno,
+    .main__text__dos,
+    .main__text__tres {
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 2rem;
+      }  
+    }
+  
+    .btn__color {
+      background-color: $primary;
+      color: white;
+      border: black;
+      font-size: 1.8rem;
+      border-radius: 40px;
+      padding: 5px 20px;
+      &:hover {
+        transform: scale(1.1);
+        transition: 0.3s;
+        background-color: $primary !important;
+        border:black !important;
+      }
+    }
+
+    /* Cards products desktop */
+  
+    .carousel-inner,
+    .products__title {
+      text-align: center;
+      ;
+    }
+  
+    .products__title {
+      padding-top: 60px;
+      font-size: 2.5rem;
+    }
+
+    .card {
+      margin: 20px auto;
+      width: calc(60%/3);
+      height: auto;
+      &__wrapper {
+        display: flex;
+        background-color: rgb(236, 232, 232);
+      }
+      &:not(:first-child) {
+        display: flex;
+      }
+      &-title {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+      &-text {
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+    }
+    .image__wrapper {
+      img {
+        width: 100%;
+        height: 100%;
+      }  
+    }
+    .btn__color__product {
+      font-size: 1.2em;
+      padding: 5px 30px;
+      &:hover {
+        transform: scale(1.1);
+        background-color: $primary !important;
+        color: white !important;
+      }
+    }
+    .carousel-control {
+      &-prev {
+        position: absolute;
+        top: 150px;
+        left: 0px;
+      } 
+      &-next {
+        position: absolute;
+        top: 150px;
+        right: 0px;
+      }
+    }
+
+    /* multimedia desktop */
+
+    .audio {
+      width: 500px;
+      margin-top: 0px;
+      padding-bottom: 10px;
+    }
+  }

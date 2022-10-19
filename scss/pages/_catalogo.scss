@@ -1,0 +1,58 @@
+.card-catalogo-bonsai {
+  padding: 0%;
+  height: fit-content;
+  margin: 20px auto;
+  &:not(:first-child) {
+    display: block;
+  }
+}
+
+.card-catalogo-kokedama {
+  padding: 0%;
+  margin: 20px auto;
+  height: fit-content;
+  &:not(:first-child) {
+    display: block;
+  }
+}
+
+.row-cards {
+  h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+    text-decoration: underline;
+  }
+}
+
+// Inicio vista desktop
+
+@media (min-width: 992px) {
+  .card-catalogo-bonsai {
+    padding: 0%;
+    margin: 20px auto;
+    &:not(:first-child) {
+      display: block;
+    }
+  }
+  
+  .card-catalogo-kokedama {
+    padding: 0%;
+    margin: 20px auto;
+    &:not(:first-child) {
+      display: block;
+    }
+  }
+  
+  .row-cards {
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+
+@import "./complements/variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+@import "./complements/mixins";
+@import "./pages/index";
+@import "./pages/sobrenosotros";
+@import "./pages/bonsai";
+@import "./pages/kokedama";
+@import "./pages/catalogo";
+@import "./pages/contacto";
+@import "./pages/registro";
+@import "./pages/iniciarsesion";
+@import "./secciones/navbar";
+@import "./secciones/footer";
+@import "./complements/bucles";
