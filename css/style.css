@@ -8485,20 +8485,22 @@ textarea.form-control-lg {
       width: 60px; }
   /* Carousel Main desktop */
   .main__text__uno {
-    width: 650px;
-    animation: move 3s ease;
+    animation: move 3s ease; }
+  .main__text__uno,
+  .main__text__dos,
+  .main__text__tres {
     position: absolute;
     bottom: 160px; }
-  .main__text__uno h1, .main__text__uno .h1,
-  .main__text__dos h1,
-  .main__text__dos .h1,
-  .main__text__tres h1,
-  .main__text__tres .h1 {
-    font-size: 5rem; }
-  .main__text__uno p,
-  .main__text__dos p,
-  .main__text__tres p {
-    font-size: 3rem; }
+    .main__text__uno h1, .main__text__uno .h1,
+    .main__text__dos h1,
+    .main__text__dos .h1,
+    .main__text__tres h1,
+    .main__text__tres .h1 {
+      font-size: 4rem; }
+    .main__text__uno p,
+    .main__text__dos p,
+    .main__text__tres p {
+      font-size: 3rem; }
   .btn__color {
     background-color: #813d81;
     color: white;
@@ -8766,13 +8768,11 @@ form #boton {
     color: white; }
     .nav__menu a:hover {
       color: #d5cece; }
-  .nav__menu ul {
-    display: none;
-    z-index: 1; }
   .nav__menu li:hover ul {
     background-color: #813d81;
     display: block;
-    padding: 0px 10px;
+    width: fit-content;
+    margin: auto;
     border-radius: 10px; }
 
 .nav__usuario__carrito {
@@ -8796,7 +8796,8 @@ form #boton {
 
 @media (min-width: 992px) {
   .main__header__logo {
-    margin-left: 50px; }
+    margin-left: 10px;
+    padding-right: 40px; }
   .main__header img {
     width: 95px;
     padding-bottom: 10px; }
@@ -8809,7 +8810,7 @@ form #boton {
     font-size: 1.5rem;
     margin-right: 10px; }
   .nav__usuario__carrito__container {
-    margin-right: 50px; }
+    margin-right: 30px; }
   #usuario,
   #carrito,
   #registro {

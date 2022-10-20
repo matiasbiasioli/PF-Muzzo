@@ -42,14 +42,11 @@
       color: rgb(213, 206, 206);
     }
   }
-  ul {
-    display: none;
-    z-index: 1;
-  }
   li:hover ul {
     background-color: rgb(129, 61, 129);
     display: block;
-    padding: 0px 10px;
+    width: fit-content;
+    margin: auto;
     border-radius: 10px;
   }
 }
@@ -79,7 +76,8 @@
 @media (min-width: 992px) {
   .main__header {
     &__logo {
-      margin-left: 50px;
+      margin-left: 10px;
+      padding-right: 40px;
     }
     img {
       width: 95px;
@@ -90,16 +88,19 @@
       line-height: 1.2;
       font-size: 1.5rem;
       padding-left: 5px;
+      
+
     }
   }
   .nav__menu {
     a {
       font-size: 1.5rem;
       margin-right: 10px;
+    
     }
   }
   .nav__usuario__carrito__container {
-    margin-right: 50px;
+    margin-right: 30px;
   }
 
   #usuario,

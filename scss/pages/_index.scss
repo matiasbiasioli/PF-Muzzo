@@ -123,17 +123,16 @@
     /* Carousel Main desktop */
     
     .main__text__uno {
-      width: 650px;
       animation: move 3s ease;
-      position: absolute;
-      bottom: 160px;
     }
   
     .main__text__uno,
     .main__text__dos,
     .main__text__tres {
+      position: absolute;
+      bottom: 160px;
       h1 {
-        font-size: 5rem;
+        font-size: 4rem;
       }
       p {
         font-size: 3rem;
