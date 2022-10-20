@@ -8429,6 +8429,8 @@ textarea.form-control-lg {
   font-size: 0.9rem;
   border-radius: 40px;
   padding: 2.5px 10px; }
+  .btn__color:hover {
+    background-color: #813d81; }
 
 /* Cards */
 .productos {
@@ -8469,6 +8471,8 @@ textarea.form-control-lg {
   background-color: #813d81;
   color: white;
   font-size: 15px; }
+  .btn__color__product:hover {
+    background-color: #813d81; }
 
 /* multimedia mobile */
 .audio {

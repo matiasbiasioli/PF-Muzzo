@@ -46,6 +46,9 @@
     font-size: 0.9rem;
     border-radius: 40px;
     padding: 2.5px 10px;
+    &:hover {
+      background-color: $primary;
+    }
   }
   
   /* Cards */
@@ -99,6 +102,9 @@
     background-color: $primary;
     color: white;
     font-size: 15px;
+    &:hover {
+      background-color: $primary;
+    }
   }
   
   /* multimedia mobile */
