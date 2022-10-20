@@ -8743,7 +8743,9 @@ form #boton {
 
 #formulario__usuario {
   background-color: #ece8e8;
-  padding: 20px; }
+  padding: 60px; }
+  #formulario__usuario .form__usuario {
+    width: 40%; }
 
 #boton__usuario {
   background-color: #02021c;
