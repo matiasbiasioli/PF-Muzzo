@@ -51,7 +51,7 @@
     }
   }
   
-  /* Cards */
+  /* Cards mobile */
   
   .productos {
     background-color: rgb(236, 232, 232);
@@ -115,6 +115,16 @@
     padding-bottom: 20px;
   }
 
+  // Aqui comienza vista Tablet
+
+  @media (min-width: 768px) {
+    
+  }
+
+
+
+
+
   /* Aqui comienza vista Desktop */
   
   @media (min-width: 992px) {
@@ -173,11 +183,12 @@
     }
 
     .card {
-      margin: 20px auto;
+      margin: 20px 50px;
       width: calc(60%/3);
       height: auto;
       &__wrapper {
         display: flex;
+        justify-content: center;
         background-color: rgb(236, 232, 232);
       }
       &:not(:first-child) {
@@ -200,9 +211,10 @@
     }
     .btn__color__product {
       font-size: 1.2em;
-      padding: 5px 30px;
+      padding: 5px 20px;
       &:hover {
         transform: scale(1.1);
+        transition: 0.5s;
         background-color: $primary !important;
         color: white !important;
       }

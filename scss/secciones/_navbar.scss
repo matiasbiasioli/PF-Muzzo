@@ -9,6 +9,9 @@
     color: white;
     text-decoration: none;
     margin-left: 2.5rem;
+    &:hover {
+      color: rgb(213, 206, 206);
+    }
     span {
       color: $love-logo;
     }
@@ -18,15 +21,9 @@
       font-weight: bold;
       padding-left: 5px;
       padding-top: 5px;
-      &:hover {
-        color: rgb(213, 206, 206);
-      }
     }
     img {
       width: 75px;
-      &:hover {
-        color: rgb(213, 206, 206);
-      }
     } 
   }
   .btn-hamburguesa {
@@ -38,6 +35,7 @@
   font-weight: bold;
   a {
     color: white;
+    text-decoration: none;
     &:hover {
       color: rgb(213, 206, 206);
     }
@@ -46,6 +44,7 @@
     background-color: rgb(129, 61, 129);
     display: block;
     width: fit-content;
+    padding: 10px;
     margin: auto;
     border-radius: 10px;
   }
@@ -88,8 +87,6 @@
       line-height: 1.2;
       font-size: 1.5rem;
       padding-left: 5px;
-      
-
     }
   }
   .nav__menu {

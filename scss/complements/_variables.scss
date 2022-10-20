@@ -40,7 +40,7 @@ $theme-colors: (
 // Aquí viene un @Extend
 
 .boxshadowed {
-  box-shadow: 6px 6px 20px 1px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 6px 6px 20px 1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 6px 6px 20px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.75);
 }

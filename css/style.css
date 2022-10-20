@@ -1,7 +1,7 @@
 .boxshadowed, .card {
-  box-shadow: 6px 6px 20px 1px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 6px 6px 20px 1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 6px 6px 20px 1px rgba(0, 0, 0, 0.75); }
+  box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.75); }
 
 /*!
    * Bootstrap  v5.2.1 (https://getbootstrap.com/)
@@ -8432,7 +8432,7 @@ textarea.form-control-lg {
   .btn__color:hover {
     background-color: #813d81; }
 
-/* Cards */
+/* Cards mobile */
 .productos {
   background-color: #ece8e8; }
 
@@ -8524,11 +8524,12 @@ textarea.form-control-lg {
     padding-top: 60px;
     font-size: 2.5rem; }
   .card {
-    margin: 20px auto;
+    margin: 20px 50px;
     width: calc(60%/3);
     height: auto; }
     .card__wrapper {
       display: flex;
+      justify-content: center;
       background-color: #ece8e8; }
     .card:not(:first-child) {
       display: flex; }
@@ -8543,9 +8544,10 @@ textarea.form-control-lg {
     height: 100%; }
   .btn__color__product {
     font-size: 1.2em;
-    padding: 5px 30px; }
+    padding: 5px 20px; }
     .btn__color__product:hover {
       transform: scale(1.1);
+      transition: 0.5s;
       background-color: #813d81 !important;
       color: white !important; }
   .carousel-control-prev {
@@ -8748,6 +8750,8 @@ form #boton {
     color: white;
     text-decoration: none;
     margin-left: 2.5rem; }
+    .main__header__logo:hover {
+      color: #d5cece; }
     .main__header__logo span {
       color: #eb0454; }
     .main__header__logo p {
@@ -8756,12 +8760,8 @@ form #boton {
       font-weight: bold;
       padding-left: 5px;
       padding-top: 5px; }
-      .main__header__logo p:hover {
-        color: #d5cece; }
     .main__header__logo img {
       width: 75px; }
-      .main__header__logo img:hover {
-        color: #d5cece; }
   .main__header .btn-hamburguesa {
     font-size: .7rem;
     margin: auto; }
@@ -8769,13 +8769,15 @@ form #boton {
 .nav__menu {
   font-weight: bold; }
   .nav__menu a {
-    color: white; }
+    color: white;
+    text-decoration: none; }
     .nav__menu a:hover {
       color: #d5cece; }
   .nav__menu li:hover ul {
     background-color: #813d81;
     display: block;
     width: fit-content;
+    padding: 10px;
     margin: auto;
     border-radius: 10px; }
 
