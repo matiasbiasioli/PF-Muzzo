@@ -8741,6 +8741,19 @@ form #boton {
     width: 100vw;
     height: 370px; } }
 
+#formulario__usuario {
+  background-color: #ece8e8;
+  padding: 20px; }
+
+#boton__usuario {
+  background-color: #02021c;
+  color: white;
+  width: 20%;
+  padding: 10px; }
+  #boton__usuario:hover {
+    cursor: pointer;
+    background-color: #17175d; }
+
 .main__header {
   background-color: #74ae21; }
   .main__header__logo {

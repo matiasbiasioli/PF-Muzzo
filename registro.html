@@ -1,97 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="Registro de usuario de compras de bonsai"
     />
-    <meta
-      name="keywords"
-      content="registro, usuario, plantas, bonsai"
-    />
+    <meta name="keywords" content="registro, usuario, plantas, bonsai" />
     <title>Registro de usuario</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="shortcut icon" href="imagenes/bonsai.ico" />
-</head>
+  </head>
 
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg main__header ">
-      <div class="container-fluid">
-        <a class="main__header__logo" href="./index.html">
-          <img src="./imagenes/bonsai logo.png" alt="logo empresa" />
-          <p>Bonsai & Kokedama's <span>Love</span></p>
-        </a>
-        <button
-          class="navbar-toggler btn-hamburguesa"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav__menu">
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./sobrenosotros.html">Sobre Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./bonsai.html">Bonsai</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./kokedama.html">Kokedamas</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="./catalogo.html"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Catalogo
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="./catalogo.html">Bonsai</a></li>
-                <li><a href="./catalogo.html">Kokedamas</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contacto.html">Contacto</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="nav__usuario__carrito__container">
-        <div>
-          <a href="./registro.html" id="registro">Registrarse</a>
-        </div>
-        <div class="nav__usuario__carrito">
-          <a href="./iniciarsesion.html" id="usuario"
-            ><i class="fa-solid fa-user"></i
-          ></a>
-          <a href="#" id="carrito"
-            ><i class="fa-solid fa-cart-shopping"></i>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg main__header">
+        <div class="container-fluid">
+          <a class="main__header__logo" href="./index.html">
+            <img src="./imagenes/bonsai logo.png" alt="logo empresa" />
+            <p>Bonsai & Kokedama's <span>Love</span></p>
           </a>
+          <button
+            class="navbar-toggler btn-hamburguesa"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse text-center"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav__menu">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sobrenosotros.html"
+                  >Sobre Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./bonsai.html">Bonsai</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./kokedama.html">Kokedamas</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="./catalogo.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Catalogo
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="./catalogo.html">Bonsai</a></li>
+                  <li><a href="./catalogo.html">Kokedamas</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
-    
+        <div class="nav__usuario__carrito__container">
+          <div>
+            <a href="./registro.html" id="registro">Registrarse</a>
+          </div>
+          <div class="nav__usuario__carrito">
+            <a href="./iniciarsesion.html" id="usuario"
+              ><i class="fa-solid fa-user"></i
+            ></a>
+            <a href="#" id="carrito"
+              ><i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-      <!-- Fontawesome -->
+    <footer class="footer">
+      <div class="footer__logo">
+        <img
+          width="200"
+          heigth="150"
+          src="./imagenes/bonsai-logo.svg"
+          alt="logo"
+        />
+        <p>Bonsai & Kokedama's Love</p>
+      </div>
+      <div class="footer__contactanos">
+        <h2>Contactanos</h2>
+        <h3>bonsai&kokedamaslove@gmail.com</h3>
+      </div>
+      <div class="footer__iconos__redes">
+        <h2>Redes sociales</h2>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+      </div>
+    </footer>
+    
+    <!-- JavaScript Bundle with Popper -->
     <script
-    src="https://kit.fontawesome.com/94048fd23b.js"
-    crossorigin="anonymous"
-  ></script>
-</body>
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/94048fd23b.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
