@@ -16,53 +16,75 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="shortcut icon" href="imagenes/bonsai.ico" />
   </head>
+  
   <body>
-    <header class="main__header">
-      <div class="main__header__logo">
-        <img src="./imagenes/bonsai logo.png" alt="logo empresa" />
-        <p>Bonsai & Kokedama's <span>Love</span></p>
-      </div>
-      <nav>
-        <ul class="nav__menu">
-          <li>
-            <a href="./index.html">Home</a>
-          </li>
-          <li>
-            <a href="./sobrenosotros.html">Nosotros</a>
-          </li>
-          <li>
-            <a href="./bonsai.html">Bonsai</a>
-          </li>
-          <li>
-            <a href="./kokedama.html">Kokedamas</a>
-          </li>
-          <li>
-            <a href="./catalogo.html">Catalogo</a>
-            <ul id="submenu">
-              <li>
-                <a href="./bonsai.html">Bonsai</a>
+    <header>
+      <nav class="navbar navbar-expand-lg main__header ">
+        <div class="container-fluid">
+          <a class="main__header__logo" href="./index.html">
+            <img src="./imagenes/bonsai logo.png" alt="logo empresa" />
+            <p>Bonsai & Kokedama's <span>Love</span></p>
+          </a>
+          <button
+            class="navbar-toggler btn-hamburguesa"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav__menu">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Inicio</a>
               </li>
-              <li>
-                <a href="./kokedama.html">Kokedamas</a>
+              <li class="nav-item">
+                <a class="nav-link" href="./sobrenosotros.html">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./bonsai.html">Bonsai</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./kokedama.html">Kokedamas</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="./catalogo.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Catalogo
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./catalogo.html">Bonsai</a></li>
+                  <li><a class="dropdown-item" href="./catalogo.html">Kokedamas</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
               </li>
             </ul>
-          </li>
-          <li>
-            <a href="#formulario">Contacto</a>
-          </li>
-        </ul>
+          </div>
+        </div>
+        <div class="nav__usuario__carrito__container">
+          <div>
+            <a href="./registro.html" id="registro">Registrarse</a>
+          </div>
+          <div class="nav__usuario__carrito">
+            <a href="./iniciarsesion.html" id="usuario"
+              ><i class="fa-solid fa-user"></i
+            ></a>
+            <a href="#" id="carrito"
+              ><i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </div>
+        </div>
       </nav>
-      <div class="nav__usuario__carrito__container">
-        <div>
-          <a href="./registro.html" id="registro">Registrarse</a>
-        </div>
-        <div class="nav__usuario__carrito">
-          <a href="./iniciarsesion.html" id="usuario"><i class="fa-solid fa-user"></i></a>
-          <a href="#" id="carrito"
-            ><i class="fa-solid fa-cart-shopping"></i>
-          </a>
-        </div>
-      </div>
     </header>
 
     <!-- Fontawesome -->
