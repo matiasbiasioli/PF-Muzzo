@@ -123,20 +123,20 @@
     /* Carousel Main desktop */
     
     .main__text__uno {
-      width: 450px;
+      width: 650px;
       animation: move 3s ease;
       position: absolute;
-      bottom: 200px;
+      bottom: 160px;
     }
   
     .main__text__uno,
     .main__text__dos,
     .main__text__tres {
       h1 {
-        font-size: 3rem;
+        font-size: 5rem;
       }
       p {
-        font-size: 2rem;
+        font-size: 3rem;
       }  
     }
   
@@ -144,14 +144,13 @@
       background-color: $primary;
       color: white;
       border: black;
-      font-size: 1.8rem;
+      font-size: 2.4rem;
       border-radius: 40px;
       padding: 5px 20px;
       &:hover {
         transform: scale(1.1);
         transition: 0.3s;
         background-color: $primary !important;
-        border:black !important;
       }
     }
 

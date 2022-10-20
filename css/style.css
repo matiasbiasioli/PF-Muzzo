@@ -8485,32 +8485,31 @@ textarea.form-control-lg {
       width: 60px; }
   /* Carousel Main desktop */
   .main__text__uno {
-    width: 450px;
+    width: 650px;
     animation: move 3s ease;
     position: absolute;
-    bottom: 200px; }
+    bottom: 160px; }
   .main__text__uno h1, .main__text__uno .h1,
   .main__text__dos h1,
   .main__text__dos .h1,
   .main__text__tres h1,
   .main__text__tres .h1 {
-    font-size: 3rem; }
+    font-size: 5rem; }
   .main__text__uno p,
   .main__text__dos p,
   .main__text__tres p {
-    font-size: 2rem; }
+    font-size: 3rem; }
   .btn__color {
     background-color: #813d81;
     color: white;
     border: black;
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     border-radius: 40px;
     padding: 5px 20px; }
     .btn__color:hover {
       transform: scale(1.1);
       transition: 0.3s;
-      background-color: #813d81 !important;
-      border: black !important; }
+      background-color: #813d81 !important; }
   /* Cards products desktop */
   .carousel-inner,
   .products__title {
@@ -8697,7 +8696,6 @@ textarea.form-control-lg {
 
 form h2, form .h2 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  text-decoration: underline;
   margin: 20px auto;
   text-align: center;
   font-size: 2rem; }
@@ -8712,15 +8710,13 @@ form #boton {
 
 .map {
   background-color: #ece8e8;
-  padding: 60px 0px;
   text-align: center; }
   .map iframe {
     width: 90vw;
-    height: 420px;
+    height: 440px;
     margin: auto; }
   .map h2, .map .h2 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-decoration: underline;
     margin-bottom: 40px;
     font-size: 2rem; }
 
@@ -8738,60 +8734,52 @@ form #boton {
     height: 370px; } }
 
 .main__header {
-  background-color: #74ae21;
-  display: grid;
-  grid-template-areas: "logo" "menu" "carrito";
-  gap: 10px;
-  justify-items: center;
-  border: solid 1px; }
+  background-color: #74ae21; }
   .main__header__logo {
     display: flex;
     align-items: center;
     padding-top: 10px;
-    color: white; }
+    color: white;
+    text-decoration: none;
+    margin-left: 2.5rem; }
     .main__header__logo span {
       color: #eb0454; }
-  .main__header img {
-    width: 75px; }
-  .main__header p {
-    width: 75px;
-    line-height: 1.2;
-    font-weight: bold;
-    padding-left: 5px;
-    padding-top: 5px; }
+    .main__header__logo p {
+      width: 75px;
+      line-height: 1.2;
+      font-weight: bold;
+      padding-left: 5px;
+      padding-top: 5px; }
+      .main__header__logo p:hover {
+        color: #d5cece; }
+    .main__header__logo img {
+      width: 75px; }
+      .main__header__logo img:hover {
+        color: #d5cece; }
+  .main__header .btn-hamburguesa {
+    font-size: .7rem;
+    margin: auto; }
 
 .nav__menu {
-  font-weight: bold;
-  list-style: none;
-  display: grid;
-  gap: 5px 35px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: auto;
-  padding: 0; }
-
-a {
-  color: white;
-  text-decoration: none; }
-  a:hover {
-    color: #d5cece; }
-
-ul {
-  list-style: none;
-  display: none;
-  z-index: 1; }
-
-li:hover ul {
-  background-color: #813d81;
-  display: block;
-  padding: 0px 10px;
-  border-radius: 10px; }
+  font-weight: bold; }
+  .nav__menu a {
+    color: white; }
+    .nav__menu a:hover {
+      color: #d5cece; }
+  .nav__menu ul {
+    display: none;
+    z-index: 1; }
+  .nav__menu li:hover ul {
+    background-color: #813d81;
+    display: block;
+    padding: 0px 10px;
+    border-radius: 10px; }
 
 .nav__usuario__carrito {
   padding: 10px 0px; }
   .nav__usuario__carrito__container {
-    text-align: center; }
+    text-align: center;
+    margin: auto; }
 
 #usuario {
   padding-right: 25px; }
@@ -8807,23 +8795,21 @@ li:hover ul {
     color: white; }
 
 @media (min-width: 992px) {
-  .main__header {
-    grid-template-areas: "logo menu carrito";
-    align-items: center;
-    height: 8rem;
-    border-style: solid; }
-    .main__header img {
-      width: 95px;
-      padding-bottom: 10px; }
-    .main__header p {
-      width: 120px;
-      line-height: 1.2;
-      font-size: 1.5rem;
-      padding-left: 5px; }
-  .nav__menu li:hover ul {
-    position: absolute; }
+  .main__header__logo {
+    margin-left: 50px; }
+  .main__header img {
+    width: 95px;
+    padding-bottom: 10px; }
+  .main__header p {
+    width: 120px;
+    line-height: 1.2;
+    font-size: 1.5rem;
+    padding-left: 5px; }
   .nav__menu a {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    margin-right: 10px; }
+  .nav__usuario__carrito__container {
+    margin-right: 50px; }
   #usuario,
   #carrito,
   #registro {
