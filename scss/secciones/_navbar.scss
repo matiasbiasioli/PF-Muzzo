@@ -54,7 +54,7 @@
   padding: 10px 0px;
   &__container {
     text-align: center;
-    margin: auto
+    margin: auto;
   }
 }
 #usuario {
@@ -65,6 +65,7 @@
 #registro {
   color: white;
   font-weight: bold;
+  text-decoration: none;
   &:hover {
     color: white;
   }
@@ -85,24 +86,24 @@
     p {
       width: 120px;
       line-height: 1.2;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       padding-left: 5px;
     }
   }
   .nav__menu {
     a {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       margin-right: 10px;
     
     }
   }
   .nav__usuario__carrito__container {
-    margin-right: 30px;
+    margin-right: 50px;
   }
 
   #usuario,
   #carrito,
   #registro {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }

@@ -8445,7 +8445,7 @@ textarea.form-control-lg {
 .products__title {
   font-family: 'Anton', sans-serif;
   padding-top: 20px;
-  font-size: 2rem; }
+  font-size: 1.8rem; }
 
 .card {
   margin: auto;
@@ -8594,12 +8594,12 @@ textarea.form-control-lg {
 
 .row-bonsai h2, .row-bonsai .h2 {
   margin: 10px auto;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+  font-family: 'Anton', sans-serif; }
 
 .row-bonsai p {
   margin: 10px auto;
   font-size: larger;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  font-family: 'Montserrat', sans-serif; }
 
 .row-bonsai .titulo2 {
   display: flex;
@@ -8614,7 +8614,7 @@ textarea.form-control-lg {
   width: 100vw; }
 
 #imagen-fertilizacion {
-  width: 90vw; }
+  width: 80vw; }
 
 .multimedia {
   background-color: #ece8e8;
@@ -8645,12 +8645,12 @@ textarea.form-control-lg {
 
 .row-koke h2, .row-koke .h2 {
   margin: 20px auto;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+  font-family: 'Anton', sans-serif; }
 
 .row-koke p {
   margin: 10px auto;
   font-size: larger;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  font-family: 'Montserrat', sans-serif; }
 
 .row-koke .titulo2 {
   display: flex;
@@ -8676,7 +8676,7 @@ textarea.form-control-lg {
     display: block; }
 
 .row-cards h2, .row-cards .h2 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Anton', sans-serif;
   font-size: 2rem;
   text-decoration: underline; }
 
@@ -8722,7 +8722,7 @@ form #boton {
     height: 440px;
     margin: auto; }
   .map h2, .map .h2 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Anton', sans-serif;
     margin-bottom: 40px;
     font-size: 2rem; }
 
@@ -8821,7 +8821,8 @@ form #boton {
 #carrito,
 #registro {
   color: white;
-  font-weight: bold; }
+  font-weight: bold;
+  text-decoration: none; }
   #usuario:hover,
   #carrito:hover,
   #registro:hover {
@@ -8837,17 +8838,17 @@ form #boton {
   .main__header p {
     width: 120px;
     line-height: 1.2;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     padding-left: 5px; }
   .nav__menu a {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-right: 10px; }
   .nav__usuario__carrito__container {
-    margin-right: 30px; }
+    margin-right: 50px; }
   #usuario,
   #carrito,
   #registro {
-    font-size: 1.4rem; } }
+    font-size: 1.2rem; } }
 
 .footer {
   display: flex;
