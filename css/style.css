@@ -8413,11 +8413,14 @@ textarea.form-control-lg {
   .main__text__dos .h1,
   .main__text__tres h1,
   .main__text__tres .h1 {
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    font-family: 'Anton', sans-serif; }
   .main__text__uno p,
   .main__text__dos p,
   .main__text__tres p {
-    font-size: 1rem; }
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; }
 
 @keyframes move {
   0% {
@@ -8426,7 +8429,8 @@ textarea.form-control-lg {
 .btn__color {
   background-color: #813d81;
   color: white;
-  border: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
   font-size: 0.9rem;
   border-radius: 40px;
   padding: 2.5px 10px; }
@@ -8837,18 +8841,21 @@ form #boton {
     padding-bottom: 10px; }
   .main__header p {
     width: 120px;
-    line-height: 1.2;
+    line-height: 1.1;
     font-size: 1.4rem;
-    padding-left: 5px; }
+    padding-left: 5px;
+    font-family: 'Montserrat', sans-serif; }
   .nav__menu a {
-    font-size: 1.2rem;
-    margin-right: 10px; }
+    font-size: 1.1rem;
+    margin-right: 5px;
+    font-family: 'Montserrat', sans-serif; }
   .nav__usuario__carrito__container {
     margin-right: 50px; }
   #usuario,
   #carrito,
   #registro {
-    font-size: 1.2rem; } }
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif; } }
 
 .footer {
   display: flex;
@@ -8874,12 +8881,9 @@ form #boton {
       margin-left: 5px;
       width: 80px; }
 
-.footer__contactanos h2, .footer__contactanos .h2 {
-  text-align: center;
-  font-size: 1.4rem; }
-
 .footer__contactanos h3, .footer__contactanos .h3 {
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  text-align: center; }
 
 .footer__iconos__redes {
   text-align: center;
@@ -8893,22 +8897,14 @@ form #boton {
   .footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    height: 150px; }
-    .footer__logo img {
-      margin: auto;
-      width: 100px;
-      height: 100px; }
+    height: 120px; }
     .footer__logo p {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       line-height: 1.1;
       width: 120px; }
-  .footer__contactanos h2, .footer__contactanos .h2 {
-    font-size: 2rem; }
-  .footer__iconos__redes h2, .footer__iconos__redes .h2 {
-    font-size: 2rem; }
-  .footer__iconos__redes i {
-    font-size: 2rem; } }
+    .footer__iconos__redes i {
+      font-size: 2.5rem;
+      margin-left: 10px; } }
 
 .margin-1 {
   margin: 1rem; }
