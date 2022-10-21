@@ -8752,11 +8752,8 @@ form {
     width: 100vw;
     height: 370px; } }
 
-.formulario__registro {
-  height: 10em; }
-  .formulario__registro .form__registro {
-    width: 80%;
-    margin: auto; }
+.formulario__registro .form__registro {
+  margin: auto; }
 
 #formulario__usuario {
   background-color: #ece8e8;
