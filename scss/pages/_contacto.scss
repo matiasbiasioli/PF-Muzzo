@@ -1,12 +1,14 @@
 #formulario {
   background-color: rgb(236, 232, 232);
-  padding: 20px;
   width: 100%;
-  margin: auto; 
+  padding: 40px 0px;
+  margin: auto;
 }
 form {
+  width: 90vw;
+  margin: auto;
   h2 {
-    font-family: 'Anton', sans-serif;
+    font-family: "Anton", sans-serif;
     margin: 20px auto;
     text-align: center;
     font-size: 2rem;
@@ -24,14 +26,15 @@ form {
 
 .map {
   background-color: rgb(236, 232, 232);
+  text-align: center;
+  padding-top: 40px;
   iframe {
     width: 90vw;
     height: 440px;
     margin: auto;
   }
-  text-align: center;
   h2 {
-    font-family: 'Anton', sans-serif;
+    font-family: "Anton", sans-serif;
     margin-bottom: 40px;
     font-size: 2rem;
   }
@@ -43,6 +46,10 @@ form {
   form {
     width: 50vw;
     margin: auto;
+    border: black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 7px 2px black;
+    padding: 20px;
     h2 {
       font-size: 2.5rem;
     }
@@ -56,5 +63,5 @@ form {
       width: 100vw;
       height: 370px;
     }
-  } 
+  }
 }

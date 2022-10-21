@@ -92,6 +92,67 @@
       </nav>
     </header>
 
+    <section id="formulario" class="formulario__registro">
+      <form action="" class="form__registro">
+        <h2>Registro</h2>
+        <div class="mb-3">
+          <label class="form-label fw-bold" for="nombre"
+            >Nombre y apellido</label
+          >
+          <input
+            class="form-control"
+            type="text"
+            name="nombre"
+            placeholder="nombre y apellido"
+          />
+        </div>
+        <div class="mb-3">
+          <label class="form-label fw-bold" for="email">Email</label>
+          <input
+            class="form-control"
+            type="email"
+            name="email"
+            placeholder="correo electronico"
+          />
+        </div>
+        <div class="mb-4">
+          <label class="form-label fw-bold" for="password">Contraseña</label>
+          <input
+            class="form-control"
+            type="password"
+            name="password"
+            id=""
+            placeholder="contraseña"
+          />
+        </div>
+        <div class="text-center">
+          <p>
+            Acepto término y condiciones
+            <input
+              type="checkbox"
+              name="Acepto terminos y condicones"
+              id="Acepto termino y condicones"
+            />
+          </p>
+        </div>
+
+        <div>
+          <label class="form-label fw-bold" for="registro">Registrate</label>
+          <input
+            class="form-control fw-bold"
+            type="submit"
+            name="registro"
+            value="Registrate"
+            id="boton"
+          />
+          <p class="text-center mt-3">
+            ¿Ya tenes una cuenta?
+            <a href="./iniciarsesion.html">Iniciar sesión</a>
+          </p>
+        </div>
+      </form>
+    </section>
+
     <footer class="footer">
       <div class="footer__logo">
         <img
@@ -111,7 +172,7 @@
         <i class="fa-brands fa-facebook"></i>
       </div>
     </footer>
-    
+
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"

@@ -7,39 +7,42 @@
     align-items: center;
     justify-content: space-around;
     background-color: #3e3325;
-    color: blanchedalmond;
+    color: white;
     height: 350px;
     &__logo {
       display: flex;
       padding-top: 10px;
+      align-items: center;
       img {
         width: 75px;
         height: 75px;
       }
       p {
+        font-family: 'Montserrat', sans-serif;
         color: #ffffff;
-        font-size: 18px;
+        font-size: 1.2rem;
         line-height: 1.2;
         font-weight: bold;
         margin-top: 5px;
         margin-left: 5px;
-        width: 80px;
+        width: 90px;
       }
     }
-  }
-  
-  .footer__contactanos h3 {
-    font-size: 1.2rem;
-    text-align: center;
-  }
-  
-  .footer__iconos__redes {
-    text-align: center;
-    font-size: 1.4rem;
-    i {
-      font-size: 1.6rem;
-      padding-bottom: 10px;
-      margin: 5px 0px;
+    &__contactanos {
+      h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2rem;
+        text-align: center;
+      }
+      }
+    &__iconos__redes {
+      text-align: center;
+      font-size: 1.4rem;
+      i {
+        font-size: 1.6rem;
+        padding-bottom: 10px;
+        margin: 5px 0px;
+      }
     }
   }
 
@@ -52,9 +55,14 @@
     height: 120px;
     &__logo {
       p {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       line-height: 1.1;
       width: 120px;
+      }
+    }
+    &__contactanos {
+      h3 {
+        font-size: 1.4rem;
       }
     }
     &__iconos__redes {
@@ -63,7 +71,6 @@
         margin-left: 10px;
       }
     }
-  }
-  
+  } 
 }
 
