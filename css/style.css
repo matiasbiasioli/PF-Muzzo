@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 .boxshadowed, .card {
   box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.75);
@@ -8439,11 +8440,10 @@ textarea.form-control-lg {
 .carousel-inner,
 .products__title {
   text-align: center;
-  background-color: #ece8e8;
-  text-decoration: underline; }
+  background-color: #ece8e8; }
 
 .products__title {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Anton', sans-serif;
   padding-top: 20px;
   font-size: 2rem; }
 
@@ -8458,10 +8458,9 @@ textarea.form-control-lg {
     margin: 40px 0px; }
   .card:not(:first-child) {
     display: none; }
-
-.card-body .card-title,
-.card-body .card-text {
-  font-weight: bold; }
+  .card-body .card-title,
+  .card-body .card-text {
+    font-weight: bold; }
 
 .image__wrapper img {
   width: 100%;
@@ -8566,12 +8565,11 @@ textarea.form-control-lg {
 
 .row-sobre-nosotros h2, .row-sobre-nosotros .h2 {
   margin: auto;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+  font-family: 'Anton', sans-serif; }
 
 .row-sobre-nosotros p {
   margin: 10px auto;
-  font-size: larger;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  font-family: 'Montserrat', sans-serif; }
 
 .row-sobre-nosotros .card-nosotros {
   height: fit-content;
@@ -8703,7 +8701,7 @@ textarea.form-control-lg {
   margin: auto; }
 
 form h2, form .h2 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Anton', sans-serif;
   margin: 20px auto;
   text-align: center;
   font-size: 2rem; }
@@ -8743,18 +8741,32 @@ form #boton {
 
 #formulario__usuario {
   background-color: #ece8e8;
-  padding: 60px; }
+  padding: 30px; }
   #formulario__usuario .form__usuario {
-    width: 40%; }
+    width: 70%;
+    margin: auto; }
 
 #boton__usuario {
   background-color: #02021c;
   color: white;
-  width: 20%;
+  width: 40%;
   padding: 10px; }
   #boton__usuario:hover {
     cursor: pointer;
     background-color: #17175d; }
+
+@media (min-width: 992px) {
+  #formulario__usuario {
+    padding: 60px; }
+    #formulario__usuario .form__usuario {
+      width: 40%; }
+  #boton__usuario {
+    color: white;
+    width: 20%;
+    padding: 10px; }
+    #boton__usuario:hover {
+      cursor: pointer;
+      background-color: #17175d; } }
 
 .main__header {
   background-color: #74ae21; }

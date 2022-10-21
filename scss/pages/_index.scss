@@ -61,11 +61,10 @@
   .products__title {
     text-align: center;
     background-color: rgb(236, 232, 232);
-    text-decoration: underline;
   }
   
   .products__title {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Anton', sans-serif;
     padding-top: 20px;
     font-size: 2rem;
   }
@@ -84,20 +83,17 @@
     &:not(:first-child) {
       display: none;
     }
-  }
-
-  .card-body {
-    .card-title,
-    .card-text {
-      font-weight: bold;
+    &-body {
+      .card-title,
+      .card-text {
+        font-weight: bold;
+      }
     }
   }
-  
   .image__wrapper img {
     width: 100%;
     height: 120px;
   }
-  
   .btn__color__product {
     background-color: $primary;
     color: white;
@@ -174,7 +170,6 @@
     .carousel-inner,
     .products__title {
       text-align: center;
-      ;
     }
   
     .products__title {
