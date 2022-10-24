@@ -2,6 +2,9 @@
   padding: 0%;
   height: fit-content;
   margin: 20px auto;
+  img {
+    height: 200px;
+  }
   &:not(:first-child) {
     display: block;
   }
@@ -11,6 +14,9 @@
   padding: 0%;
   margin: 20px auto;
   height: fit-content;
+  img {
+    height: 300px;
+  }
   &:not(:first-child) {
     display: block;
   }
@@ -24,28 +30,31 @@
   }
 }
 
+// Inicio vista Tablet
+
+@media (min-width:768px) {
+  .row-cards {
+    .card-catalogo-kokedama {
+      width: 18rem;
+    }
+  }
+
+}
+
 // Inicio vista desktop
 
 @media (min-width: 992px) {
-  .card-catalogo-bonsai {
-    padding: 0%;
-    margin: 20px auto;
-    &:not(:first-child) {
-      display: block;
-    }
-  }
-  
-  .card-catalogo-kokedama {
-    padding: 0%;
-    margin: 20px auto;
-    &:not(:first-child) {
-      display: block;
-    }
-  }
-  
   .row-cards {
     h2 {
       font-size: 2.5rem;
+    }
+    .card-catalogo-bonsai {
+      padding: 0%;
+      height: auto;
+    }
+    .card-catalogo-kokedama {
+      padding: 0%;
+      height: auto;
     }
   }
 }

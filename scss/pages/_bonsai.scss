@@ -37,13 +37,15 @@
       margin: 20px auto; 
       video {
         background-color: white;
-        width: 90vw;
-        
+        width: 100vw;   
       }   
     }
   }
   
   @media (min-width:992px) {
+    #img__poda {
+      height: fit-content;
+    }
     #cuidados-bonsai {
       width: 70vw;
     }
@@ -52,7 +54,8 @@
       justify-content: space-between;
     }
     #imagen-fertilizacion {
-      width: fit-content;
+      width: 600px;
+      height: fit-content;
     }
     .multimedia-video .video {
       width: 60vw;

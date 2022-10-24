@@ -1,22 +1,159 @@
-  /* Vista Mobile */
-  
-  .nav__whatsapp {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    z-index: 2;
-    img {
-        width: 40px;
-    }
-    &:hover {
-      transform: scale(1.3);
-      transition: 0.3s;
-      cursor: pointer;
-    }   
+/* Vista Mobile */
+
+.nav__whatsapp {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 2;
+  img {
+    width: 50px;
   }
-  
-  /* main movile */
-  
+  &:hover {
+    transform: scale(1.3);
+    transition: 0.3s;
+    cursor: pointer;
+  }
+}
+
+/* Carousel main movile */
+
+.main__text__uno {
+  animation: move 3s ease;
+}
+
+.main__text__uno,
+.main__text__dos,
+.main__text__tres {
+  line-height: 1;
+  h1 {
+    font-size: 1.3rem;
+    font-family: "Anton", sans-serif;
+  }
+  p {
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(300px);
+  }
+}
+
+.btn__color {
+  background-color: $primary;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  border-radius: 40px;
+  padding: 2.5px 10px;
+  &:hover {
+    background-color: $primary;
+  }
+}
+
+/* Cards mobile */
+
+.productos {
+  background-color: rgb(236, 232, 232);
+}
+
+.carousel-inner,
+.products__title {
+  text-align: center;
+  background-color: rgb(236, 232, 232);
+}
+
+.products__title {
+  font-family: "Anton", sans-serif;
+  padding-top: 20px;
+  font-size: 1.8rem;
+}
+
+.card {
+  @extend .boxshadowed;
+  margin: auto;
+  width: 60%;
+  border: black;
+  height: fit-content;
+  .image__wrapper {
+    img {
+      width: 100%;
+      height: 170px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    background-color: rgb(236, 232, 232);
+    margin: 40px 0px;
+  }
+  &:not(:first-child) {
+    display: none;
+  }
+  &-body {
+    .card-title,
+    .card-text {
+      font-weight: bold;
+    }
+    .btn__color__product {
+      background-color: $primary;
+      color: white;
+      font-size: 1rem;
+      &:hover {
+        background-color: $primary;
+      }
+    }
+  }
+}
+
+/* multimedia mobile */
+
+.audio {
+  width: 60vw;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+// Aqui comienza vista Tablet
+
+@media (min-width: 768px) {
+  .main__text__uno,
+  .main__text__dos,
+  .main__text__tres {
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+  .card {
+    margin: auto;
+    width: 30%;
+    .image__wrapper {
+      img {
+        height: 180px;
+      }
+    }
+  }
+}
+
+/* Aqui comienza vista Desktop */
+
+@media (min-width: 992px) {
+  .nav__whatsapp {
+    right: 20px;
+    bottom: 20px;
+    img {
+      width: 60px;
+    }
+  }
+
+  /* Carousel Main desktop */
+
   .main__text__uno {
     animation: move 3s ease;
   }
@@ -24,218 +161,97 @@
   .main__text__uno,
   .main__text__dos,
   .main__text__tres {
-    line-height: 1;
+    position: absolute;
+    bottom: 160px;
     h1 {
-      font-size: 1.3rem;
-      font-family: 'Anton', sans-serif;
+      font-size: 4rem;
     }
     p {
-      font-size: 1rem;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 400;
+      font-size: 3rem;
     }
   }
-  
-  @keyframes move {
-    0% {
-      transform: translate(300px);
-    }
-  }
-  
+
   .btn__color {
     background-color: $primary;
     color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 0.9rem;
+    border: black;
+    font-size: 2.4rem;
     border-radius: 40px;
-    padding: 2.5px 10px;
+    padding: 5px 20px;
     &:hover {
-      background-color: $primary;
+      transform: scale(1.1);
+      transition: 0.3s;
+      background-color: $primary !important;
     }
   }
-  
-  /* Cards mobile */
-  
-  .productos {
-    background-color: rgb(236, 232, 232);
-  }
-  
+
+  /* Cards products desktop */
+
   .carousel-inner,
   .products__title {
     text-align: center;
-    background-color: rgb(236, 232, 232);
   }
-  
+
   .products__title {
-    font-family: 'Anton', sans-serif;
-    padding-top: 20px;
-    font-size: 1.8rem;
+    padding-top: 60px;
+    font-size: 2.5rem;
   }
-  
+
   .card {
-    @extend .boxshadowed;
-    margin: auto;
-    max-width: 70%;
-    border: black;
-    height: 250px;
+    margin: 20px 50px;
+    width: calc(60% / 3);
+    height: auto;
     &__wrapper {
       display: flex;
+      justify-content: center;
       background-color: rgb(236, 232, 232);
-      margin: 40px 0px;
     }
     &:not(:first-child) {
-      display: none;
+      display: flex;
     }
-    &-body {
-      .card-title,
-      .card-text {
-        font-weight: bold;
-      }
+    &-title {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    &-text {
+      font-size: 1.2em;
+      font-weight: bold;
     }
   }
-  .image__wrapper img {
-    width: 100%;
-    height: 120px;
+  .image__wrapper {
+    img {
+      width: 100%;
+      height: 200px;
+    }
   }
   .btn__color__product {
-    background-color: $primary;
-    color: white;
-    font-size: 15px;
+    font-size: 1.2em;
+    padding: 5px 20px;
     &:hover {
-      background-color: $primary;
+      transform: scale(1.1);
+      transition: 0.5s;
+      background-color: $primary !important;
+      color: white !important;
     }
   }
-  
-  /* multimedia mobile */
-  
-  .audio {
-    width: 60vw;
-    margin-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  // Aqui comienza vista Tablet
-
-  @media (min-width: 768px) {
-    
-  }
-
-
-
-
-
-  /* Aqui comienza vista Desktop */
-  
-  @media (min-width: 992px) {
-    .nav__whatsapp {
-      right: 20px;
-      bottom: 20px;
-      img {
-        width: 60px;
-      }
-    }
-
-    /* Carousel Main desktop */
-    
-    .main__text__uno {
-      animation: move 3s ease;
-    }
-  
-    .main__text__uno,
-    .main__text__dos,
-    .main__text__tres {
+  .carousel-control {
+    &-prev {
       position: absolute;
-      bottom: 160px;
-      h1 {
-        font-size: 4rem;
-      }
-      p {
-        font-size: 3rem;
-      }  
+      top: 150px;
+      left: 0px;
     }
-  
-    .btn__color {
-      background-color: $primary;
-      color: white;
-      border: black;
-      font-size: 2.4rem;
-      border-radius: 40px;
-      padding: 5px 20px;
-      &:hover {
-        transform: scale(1.1);
-        transition: 0.3s;
-        background-color: $primary !important;
-      }
-    }
-
-    /* Cards products desktop */
-  
-    .carousel-inner,
-    .products__title {
-      text-align: center;
-    }
-  
-    .products__title {
-      padding-top: 60px;
-      font-size: 2.5rem;
-    }
-
-    .card {
-      margin: 20px 50px;
-      width: calc(60%/3);
-      height: auto;
-      &__wrapper {
-        display: flex;
-        justify-content: center;
-        background-color: rgb(236, 232, 232);
-      }
-      &:not(:first-child) {
-        display: flex;
-      }
-      &-title {
-        font-size: 1.5em;
-        font-weight: bold;
-      }
-      &-text {
-        font-size: 1.2em;
-        font-weight: bold;
-      }
-    }
-    .image__wrapper {
-      img {
-        width: 100%;
-        height: 100%;
-      }  
-    }
-    .btn__color__product {
-      font-size: 1.2em;
-      padding: 5px 20px;
-      &:hover {
-        transform: scale(1.1);
-        transition: 0.5s;
-        background-color: $primary !important;
-        color: white !important;
-      }
-    }
-    .carousel-control {
-      &-prev {
-        position: absolute;
-        top: 150px;
-        left: 0px;
-      } 
-      &-next {
-        position: absolute;
-        top: 150px;
-        right: 0px;
-      }
-    }
-
-    /* multimedia desktop */
-
-    .audio {
-      width: 500px;
-      margin-top: 0px;
-      padding-bottom: 10px;
+    &-next {
+      position: absolute;
+      top: 150px;
+      right: 0px;
     }
   }
+
+  /* multimedia desktop */
+
+  .audio {
+    width: 500px;
+    margin-top: 0px;
+    padding-bottom: 10px;
+  }
+}
