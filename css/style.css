@@ -8405,32 +8405,28 @@ textarea.form-control-lg {
   width: 100vw;
   height: 30vh; }
 
-.main__text__uno {
+.main__img .main__text__uno {
   animation: move 3s ease; }
 
-.main__text__uno,
-.main__text__dos,
-.main__text__tres {
+.main__img .main__text__uno,
+.main__img .main__text__dos,
+.main__img .main__text__tres {
   line-height: 1; }
-  .main__text__uno h1, .main__text__uno .h1,
-  .main__text__dos h1,
-  .main__text__dos .h1,
-  .main__text__tres h1,
-  .main__text__tres .h1 {
+  .main__img .main__text__uno h1, .main__img .main__text__uno .h1,
+  .main__img .main__text__dos h1,
+  .main__img .main__text__dos .h1,
+  .main__img .main__text__tres h1,
+  .main__img .main__text__tres .h1 {
     font-size: 1.1rem;
     font-family: "Anton", sans-serif; }
-  .main__text__uno p,
-  .main__text__dos p,
-  .main__text__tres p {
-    font-size: .8rem;
+  .main__img .main__text__uno p,
+  .main__img .main__text__dos p,
+  .main__img .main__text__tres p {
+    font-size: 0.8rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 400; }
 
-@keyframes move {
-  0% {
-    transform: translate(300px); } }
-
-.btn__color {
+.main__img .btn__color {
   background-color: #813d81;
   color: white;
   font-family: "Montserrat", sans-serif;
@@ -8438,9 +8434,13 @@ textarea.form-control-lg {
   font-size: 0.6rem;
   border-radius: 40px;
   padding: 2px 8px; }
-  .btn__color:hover {
-    background-color: #813d81;
-    color: white; }
+  .main__img .btn__color:hover {
+    background-color: #813d81 !important;
+    color: white !important; }
+
+@keyframes move {
+  0% {
+    transform: translate(300px); } }
 
 /* Cards mobile */
 .productos {
@@ -8458,25 +8458,30 @@ textarea.form-control-lg {
 
 .card {
   margin: auto;
-  width: 50%;
+  width: 40%;
   border: black;
-  height: fit-content; }
+  height: 200px; }
   .card .image__wrapper img {
     width: 100%;
-    height: 140px; }
+    height: 100px; }
   .card__wrapper {
     display: flex;
     background-color: #ece8e8;
     margin: 40px 0px; }
   .card:not(:first-child) {
     display: none; }
-  .card-body .card-title,
+  .card-body .card-title {
+    font-size: 0.7rem;
+    font-weight: bold; }
   .card-body .card-text {
+    font-size: 0.5rem;
     font-weight: bold; }
   .card-body .btn__color__product {
     background-color: #813d81;
     color: white;
-    font-size: 1rem; }
+    padding: 5px 10px;
+    border-radius: 40px;
+    font-size: 0.5rem; }
     .card-body .btn__color__product:hover {
       background-color: #813d81; }
 
@@ -8489,21 +8494,31 @@ textarea.form-control-lg {
 @media (min-width: 768px) {
   .main__img img {
     height: 40vh; }
-  .main__text__uno h1, .main__text__uno .h1,
-  .main__text__dos h1,
-  .main__text__dos .h1,
-  .main__text__tres h1,
-  .main__text__tres .h1 {
+  .main__img .main__text__uno h1, .main__img .main__text__uno .h1,
+  .main__img .main__text__dos h1,
+  .main__img .main__text__dos .h1,
+  .main__img .main__text__tres h1,
+  .main__img .main__text__tres .h1 {
     font-size: 2rem; }
-  .main__text__uno p,
-  .main__text__dos p,
-  .main__text__tres p {
+  .main__img .main__text__uno p,
+  .main__img .main__text__dos p,
+  .main__img .main__text__tres p {
     font-size: 1.5rem; }
+  .main__img .btn__color {
+    font-size: 1rem; }
   .card {
     margin: auto;
-    width: 30%; }
+    width: 30%;
+    height: fit-content; }
     .card .image__wrapper img {
-      height: 180px; } }
+      height: 160px; }
+    .card-body .card-title {
+      font-size: 1rem; }
+    .card-body .card-text {
+      font-size: 0.8rem; }
+    .card-body .btn__color__product {
+      padding: 5px 10px;
+      font-size: 0.8rem; } }
 
 /* Aqui comienza vista Desktop */
 @media (min-width: 992px) {
@@ -8515,35 +8530,31 @@ textarea.form-control-lg {
   /* Carousel Main desktop */
   .main__img img {
     height: 110vh; }
-  .main__text__uno {
+  .main__img .main__text__uno {
     animation: move 3s ease; }
-  .main__text__uno,
-  .main__text__dos,
-  .main__text__tres {
+  .main__img .main__text__uno,
+  .main__img .main__text__dos,
+  .main__img .main__text__tres {
     position: absolute;
     bottom: 120px; }
-    .main__text__uno h1, .main__text__uno .h1,
-    .main__text__dos h1,
-    .main__text__dos .h1,
-    .main__text__tres h1,
-    .main__text__tres .h1 {
+    .main__img .main__text__uno h1, .main__img .main__text__uno .h1,
+    .main__img .main__text__dos h1,
+    .main__img .main__text__dos .h1,
+    .main__img .main__text__tres h1,
+    .main__img .main__text__tres .h1 {
       font-size: 3.5rem; }
-    .main__text__uno p,
-    .main__text__dos p,
-    .main__text__tres p {
+    .main__img .main__text__uno p,
+    .main__img .main__text__dos p,
+    .main__img .main__text__tres p {
       font-size: 2.9rem; }
-    .main__text__uno .btn__color,
-    .main__text__dos .btn__color,
-    .main__text__tres .btn__color {
-      background-color: #813d81;
-      color: white;
-      border: black;
+    .main__img .main__text__uno .btn__color,
+    .main__img .main__text__dos .btn__color,
+    .main__img .main__text__tres .btn__color {
       font-size: 1.8rem;
-      border-radius: 40px;
       padding: 5px 20px; }
-      .main__text__uno .btn__color:hover,
-      .main__text__dos .btn__color:hover,
-      .main__text__tres .btn__color:hover {
+      .main__img .main__text__uno .btn__color:hover,
+      .main__img .main__text__dos .btn__color:hover,
+      .main__img .main__text__tres .btn__color:hover {
         transform: scale(1.1);
         transition: 0.3s;
         background-color: #813d81 !important; }
@@ -8558,23 +8569,27 @@ textarea.form-control-lg {
     margin: 20px 50px;
     width: calc(60% / 3);
     height: auto; }
+    .card .image__wrapper img {
+      height: 180px; }
     .card__wrapper {
       display: flex;
       justify-content: center;
       background-color: #ece8e8; }
     .card:not(:first-child) {
       display: flex; }
-    .card-title {
-      font-size: 1.5em;
+    .card .card-title {
+      font-size: 1.5rem;
       font-weight: bold; }
-    .card-text {
-      font-size: 1.2em;
+    .card .card-text {
+      font-size: 1.2rem;
       font-weight: bold; }
+    .card .btn__color__product {
+      font-size: 1.2rem; }
   .image__wrapper img {
     width: 100%;
     height: 200px; }
   .btn__color__product {
-    font-size: 1.2em;
+    font-size: 1.8rem;
     padding: 5px 20px; }
     .btn__color__product:hover {
       transform: scale(1.1);
@@ -8671,7 +8686,7 @@ textarea.form-control-lg {
 
 .row-bonsai .titulo2 {
   display: flex;
-  justify-content: right; }
+  justify-content: end; }
 
 .row-bonsai .titulo3 {
   display: flex;
@@ -8712,7 +8727,6 @@ textarea.form-control-lg {
     display: flex;
     justify-content: space-between; }
   #imagen-fertilizacion {
-    width: 600px;
     height: fit-content; }
   .multimedia-video .video {
     width: 60vw;
@@ -8745,6 +8759,8 @@ textarea.form-control-lg {
     height: 200px; }
   .card-catalogo-bonsai:not(:first-child) {
     display: block; }
+  .card-catalogo-bonsai .btn {
+    border-radius: 40px; }
 
 .card-catalogo-kokedama {
   padding: 0%;
@@ -8755,6 +8771,8 @@ textarea.form-control-lg {
     height: 300px; }
   .card-catalogo-kokedama:not(:first-child) {
     display: block; }
+  .card-catalogo-kokedama .btn {
+    border-radius: 40px; }
 
 .row-cards h2, .row-cards .h2 {
   font-family: 'Anton', sans-serif;
@@ -8802,8 +8820,8 @@ form {
   text-align: center;
   padding-top: 40px; }
   .map iframe {
-    width: 90vw;
-    height: 440px;
+    width: 100%;
+    height: 340px;
     margin: auto; }
   .map h2, .map .h2 {
     font-family: "Anton", sans-serif;
@@ -8860,7 +8878,7 @@ form {
       background-color: #17175d; } }
 
 .main__header {
-  background-color: #74ae21; }
+  background-color: #73ae21; }
   .main__header__logo {
     display: flex;
     align-items: center;

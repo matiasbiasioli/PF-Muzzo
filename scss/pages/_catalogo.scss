@@ -8,6 +8,9 @@
   &:not(:first-child) {
     display: block;
   }
+  .btn {
+    border-radius: 40px;
+  } 
 }
 
 .card-catalogo-kokedama {
@@ -21,6 +24,9 @@
   &:not(:first-child) {
     display: block;
   }
+  .btn {
+    border-radius: 40px;
+  } 
 }
 
 .row-cards {
