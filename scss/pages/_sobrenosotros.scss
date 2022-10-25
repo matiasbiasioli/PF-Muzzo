@@ -1,4 +1,4 @@
-.row-sobre-nosotros {
+.row__sobre__nosotros__container {
   h2 {
     margin: auto;
     font-family: "Anton", sans-serif;
@@ -8,8 +8,10 @@
     font-family: "Montserrat", sans-serif;
     font-size: larger;
   }
-  .sobre__nosotros__container {
+  .row__sobre__nosotros__content {
     .card__sobre__nosotros {
+      width: 80%;
+      margin:auto;
       text-align: center;
       background-image: url(/imagenes/background-grey.jpg);
       background-size: cover;
@@ -22,6 +24,9 @@
       p {
         font-size: 20px;
         font-family: "Montserrat", sans-serif;
+      }
+      img {
+        margin: auto;
       }
     }
   }
@@ -38,7 +43,7 @@
   padding: 1.5rem;
 }
 
-// vista dekstop
+// vista Desktop
 
 @media (min-width: 992px) {
   .row-sobre-nosotros {

@@ -15,7 +15,14 @@
   }
 }
 
-/* Carousel main movile */
+/* Carousel main mobile */
+
+.main__img {
+  img {
+    width: 100vw;
+    height: 40vh;
+  }
+}
 
 .main__text__uno {
   animation: move 3s ease;
@@ -76,13 +83,13 @@
 .card {
   @extend .boxshadowed;
   margin: auto;
-  width: 60%;
+  width: 50%;
   border: black;
   height: fit-content;
   .image__wrapper {
     img {
       width: 100%;
-      height: 170px;
+      height: 140px;
     }
   }
   &__wrapper {
@@ -154,6 +161,13 @@
 
   /* Carousel Main desktop */
 
+  .main__img {
+    img {
+      width: 100vw;
+      height: 110vh;
+    }
+  }
+
   .main__text__uno {
     animation: move 3s ease;
   }
@@ -162,12 +176,12 @@
   .main__text__dos,
   .main__text__tres {
     position: absolute;
-    bottom: 160px;
+    bottom: 120px;
     h1 {
-      font-size: 4rem;
+      font-size: 3.5rem;
     }
     p {
-      font-size: 3rem;
+      font-size: 2.9rem;
     }
   }
 

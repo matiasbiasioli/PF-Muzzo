@@ -34,10 +34,11 @@
     &-video {
       display: flex;
       justify-content: center;
-      margin: 20px auto; 
-      video {
+      margin: auto; 
+      .video {
         background-color: white;
-        width: 100vw;   
+        width: 100%;
+        height: 40vh;  
       }   
     }
   }
@@ -47,7 +48,7 @@
       height: fit-content;
     }
     #cuidados-bonsai {
-      width: 70vw;
+      width: 50vw;
     }
     .content-fertilizacion {
       display: flex;
@@ -57,9 +58,11 @@
       width: 600px;
       height: fit-content;
     }
-    .multimedia-video .video {
-      width: 60vw;
-      height: 500px;
-      margin: 40px 0px;
-    }
+    .multimedia-video {
+      .video {
+        width: 60vw;
+        height: 70vh;
+        margin: 40px 0px;
+      }
+    } 
   }

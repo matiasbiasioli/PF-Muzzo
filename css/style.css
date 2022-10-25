@@ -8400,7 +8400,11 @@ textarea.form-control-lg {
     transition: 0.3s;
     cursor: pointer; }
 
-/* Carousel main movile */
+/* Carousel main mobile */
+.main__img img {
+  width: 100vw;
+  height: 40vh; }
+
 .main__text__uno {
   animation: move 3s ease; }
 
@@ -8453,12 +8457,12 @@ textarea.form-control-lg {
 
 .card {
   margin: auto;
-  width: 60%;
+  width: 50%;
   border: black;
   height: fit-content; }
   .card .image__wrapper img {
     width: 100%;
-    height: 170px; }
+    height: 140px; }
   .card__wrapper {
     display: flex;
     background-color: #ece8e8;
@@ -8506,23 +8510,26 @@ textarea.form-control-lg {
     .nav__whatsapp img {
       width: 60px; }
   /* Carousel Main desktop */
+  .main__img img {
+    width: 100vw;
+    height: 110vh; }
   .main__text__uno {
     animation: move 3s ease; }
   .main__text__uno,
   .main__text__dos,
   .main__text__tres {
     position: absolute;
-    bottom: 160px; }
+    bottom: 120px; }
     .main__text__uno h1, .main__text__uno .h1,
     .main__text__dos h1,
     .main__text__dos .h1,
     .main__text__tres h1,
     .main__text__tres .h1 {
-      font-size: 4rem; }
+      font-size: 3.5rem; }
     .main__text__uno p,
     .main__text__dos p,
     .main__text__tres p {
-      font-size: 3rem; }
+      font-size: 2.9rem; }
   .btn__color {
     background-color: #813d81;
     color: white;
@@ -8582,27 +8589,31 @@ textarea.form-control-lg {
     margin-top: 0px;
     padding-bottom: 10px; } }
 
-.row-sobre-nosotros h2, .row-sobre-nosotros .h2 {
+.row__sobre__nosotros__container h2, .row__sobre__nosotros__container .h2 {
   margin: auto;
   font-family: "Anton", sans-serif; }
 
-.row-sobre-nosotros p {
+.row__sobre__nosotros__container p {
   margin: 10px auto;
   font-family: "Montserrat", sans-serif;
   font-size: larger; }
 
-.row-sobre-nosotros .sobre__nosotros__container .card__sobre__nosotros {
+.row__sobre__nosotros__container .row__sobre__nosotros__content .card__sobre__nosotros {
+  width: 80%;
+  margin: auto;
   text-align: center;
   background-image: url(/imagenes/background-grey.jpg);
   background-size: cover;
   padding: 30px;
   box-shadow: 1px 1px 6px 2px black; }
-  .row-sobre-nosotros .sobre__nosotros__container .card__sobre__nosotros h4, .row-sobre-nosotros .sobre__nosotros__container .card__sobre__nosotros .h4 {
+  .row__sobre__nosotros__container .row__sobre__nosotros__content .card__sobre__nosotros h4, .row__sobre__nosotros__container .row__sobre__nosotros__content .card__sobre__nosotros .h4 {
     font-size: 30px;
     font-family: "Anton", sans-serif; }
-  .row-sobre-nosotros .sobre__nosotros__container .card__sobre__nosotros p {
+  .row__sobre__nosotros__container .row__sobre__nosotros__content .card__sobre__nosotros p {
     font-size: 20px;
     font-family: "Montserrat", sans-serif; }
+  .row__sobre__nosotros__container .row__sobre__nosotros__content .card__sobre__nosotros img {
+    margin: auto; }
 
 .parrafo-con-fondo {
   font-size: 1.4rem;
@@ -8662,16 +8673,17 @@ textarea.form-control-lg {
   .multimedia-video {
     display: flex;
     justify-content: center;
-    margin: 20px auto; }
-    .multimedia-video video {
+    margin: auto; }
+    .multimedia-video .video {
       background-color: white;
-      width: 100vw; }
+      width: 100%;
+      height: 40vh; }
 
 @media (min-width: 992px) {
   #img__poda {
     height: fit-content; }
   #cuidados-bonsai {
-    width: 70vw; }
+    width: 50vw; }
   .content-fertilizacion {
     display: flex;
     justify-content: space-between; }
@@ -8680,7 +8692,7 @@ textarea.form-control-lg {
     height: fit-content; }
   .multimedia-video .video {
     width: 60vw;
-    height: 500px;
+    height: 70vh;
     margin: 40px 0px; } }
 
 .row-koke h2, .row-koke .h2 {
@@ -8881,7 +8893,7 @@ form {
   #usuario:hover,
   #carrito:hover,
   #registro:hover {
-    color: white; }
+    color: #d5cece; }
 
 @media (min-width: 766px) {
   .main__header {
