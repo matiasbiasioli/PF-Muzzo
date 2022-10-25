@@ -42,6 +42,15 @@
       }   
     }
   }
+
+  // vista tablet
+  @media (min-width:768px) {
+    .row-bonsai {
+      #imagen-fertilizacion {
+        width: 90vw;
+      }
+    }
+  }
   
   @media (min-width:992px) {
     #img__poda {
