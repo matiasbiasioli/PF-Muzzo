@@ -8403,7 +8403,7 @@ textarea.form-control-lg {
 /* Carousel main mobile */
 .main__img img {
   width: 100vw;
-  height: 40vh; }
+  height: 30vh; }
 
 .main__text__uno {
   animation: move 3s ease; }
@@ -8417,12 +8417,12 @@ textarea.form-control-lg {
   .main__text__dos .h1,
   .main__text__tres h1,
   .main__text__tres .h1 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-family: "Anton", sans-serif; }
   .main__text__uno p,
   .main__text__dos p,
   .main__text__tres p {
-    font-size: 1rem;
+    font-size: .8rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 400; }
 
@@ -8435,11 +8435,12 @@ textarea.form-control-lg {
   color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.6rem;
   border-radius: 40px;
-  padding: 2.5px 10px; }
+  padding: 2px 8px; }
   .btn__color:hover {
-    background-color: #813d81; }
+    background-color: #813d81;
+    color: white; }
 
 /* Cards mobile */
 .productos {
@@ -8486,6 +8487,8 @@ textarea.form-control-lg {
   padding-bottom: 20px; }
 
 @media (min-width: 768px) {
+  .main__img img {
+    height: 40vh; }
   .main__text__uno h1, .main__text__uno .h1,
   .main__text__dos h1,
   .main__text__dos .h1,
@@ -8511,7 +8514,6 @@ textarea.form-control-lg {
       width: 60px; }
   /* Carousel Main desktop */
   .main__img img {
-    width: 100vw;
     height: 110vh; }
   .main__text__uno {
     animation: move 3s ease; }
@@ -8530,17 +8532,21 @@ textarea.form-control-lg {
     .main__text__dos p,
     .main__text__tres p {
       font-size: 2.9rem; }
-  .btn__color {
-    background-color: #813d81;
-    color: white;
-    border: black;
-    font-size: 2.4rem;
-    border-radius: 40px;
-    padding: 5px 20px; }
-    .btn__color:hover {
-      transform: scale(1.1);
-      transition: 0.3s;
-      background-color: #813d81 !important; }
+    .main__text__uno .btn__color,
+    .main__text__dos .btn__color,
+    .main__text__tres .btn__color {
+      background-color: #813d81;
+      color: white;
+      border: black;
+      font-size: 1.8rem;
+      border-radius: 40px;
+      padding: 5px 20px; }
+      .main__text__uno .btn__color:hover,
+      .main__text__dos .btn__color:hover,
+      .main__text__tres .btn__color:hover {
+        transform: scale(1.1);
+        transition: 0.3s;
+        background-color: #813d81 !important; }
   /* Cards products desktop */
   .carousel-inner,
   .products__title {
@@ -8743,7 +8749,8 @@ textarea.form-control-lg {
 .card-catalogo-kokedama {
   padding: 0%;
   margin: 20px auto;
-  height: fit-content; }
+  height: fit-content;
+  width: 16rem; }
   .card-catalogo-kokedama img {
     height: 300px; }
   .card-catalogo-kokedama:not(:first-child) {
