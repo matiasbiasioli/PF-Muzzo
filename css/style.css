@@ -8645,6 +8645,8 @@ textarea.form-control-lg {
 @media (min-width: 992px) {
   .row__sobre__nosotros__content {
     display: flex; }
+    .row__sobre__nosotros__content .img__serrana {
+      height: 480px; }
   .parrafo-con-fondo {
     font-size: 2.2rem;
     padding: 2rem; } }
