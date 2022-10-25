@@ -8647,6 +8647,9 @@ textarea.form-control-lg {
     display: flex; }
     .row__sobre__nosotros__content .img__serrana {
       height: 480px; }
+    .row__sobre__nosotros__content .card__sobre__nosotros h4, .row__sobre__nosotros__content .card__sobre__nosotros .h4,
+    .row__sobre__nosotros__content .card__sobre__nosotros p {
+      padding-left: 10px; }
   .parrafo-con-fondo {
     font-size: 2.2rem;
     padding: 2rem; } }
