@@ -8491,7 +8491,7 @@ textarea.form-control-lg {
   margin-top: 20px;
   padding-bottom: 20px; }
 
-@media (min-width: 768px) {
+@media (min-width: 490px) {
   .main__img img {
     height: 40vh; }
   .main__img .main__text__uno h1, .main__img .main__text__uno .h1,
@@ -8788,7 +8788,7 @@ textarea.form-control-lg {
   font-size: 2rem;
   text-decoration: underline; }
 
-@media (min-width: 768px) {
+@media (min-width: 490px) {
   .card-catalogo-bonsai {
     width: 18rem; }
     .card-catalogo-bonsai img {
