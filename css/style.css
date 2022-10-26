@@ -8463,7 +8463,7 @@ textarea.form-control-lg {
   height: 100%; }
   .card .image__wrapper img {
     width: 100%;
-    height: 100px; }
+    height: 15vh; }
   .card__wrapper {
     display: flex;
     background-color: #ece8e8;
