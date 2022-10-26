@@ -83,7 +83,7 @@
   margin: auto;
   width: 40%;
   border: black;
-  height: 200px;
+  height: 100%;
 
   .image__wrapper {
     img {
@@ -101,11 +101,11 @@
   }
   &-body {
     .card-title {
-      font-size: 0.7rem;
+      font-size: .9rem;
       font-weight: bold;
     }
     .card-text {
-      font-size: 0.5rem;
+      font-size: .7rem;
       font-weight: bold;
     }
     .btn__color__product {
@@ -113,7 +113,7 @@
       color: white;
       padding: 5px 10px;
       border-radius: 40px;
-      font-size: 0.5rem;
+      font-size: 0.7rem;
       &:hover {
         background-color: $primary;
       }

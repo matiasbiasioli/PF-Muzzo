@@ -1,15 +1,24 @@
 .card-catalogo-bonsai {
   padding: 0%;
+  width: 15rem;
   height: fit-content;
   margin: 20px auto;
   img {
-    height: 200px;
+    height: 30vh;
   }
   &:not(:first-child) {
     display: block;
   }
-  .btn {
-    border-radius: 40px;
+  .card-body {
+    .card-title {
+      font-size: 1.2rem;
+    }
+    .card-text {
+      font-size: 1rem;
+    }
+    .btn {
+      border-radius: 40px;
+    } 
   } 
 }
 
@@ -24,8 +33,16 @@
   &:not(:first-child) {
     display: block;
   }
-  .btn {
-    border-radius: 40px;
+  .card-body {
+    .card-title {
+      font-size: 1.2rem;
+    }
+    .card-text {
+      font-size: 1rem;
+    }
+    .btn {
+      border-radius: 40px;
+    } 
   } 
 }
 
@@ -40,12 +57,13 @@
 // Inicio vista Tablet
 
 @media (min-width:768px) {
-  .row-cards {
-    .card-catalogo-kokedama {
+    .card-catalogo-bonsai{
       width: 18rem;
+      img {
+        height: 20vh;
+      }
     }
-  }
-
+    
 }
 
 // Inicio vista desktop
@@ -58,6 +76,9 @@
     .card-catalogo-bonsai {
       padding: 0%;
       height: auto;
+      img {
+        height: 30vh;
+      }
     }
     .card-catalogo-kokedama {
       padding: 0%;

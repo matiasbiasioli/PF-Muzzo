@@ -8460,7 +8460,7 @@ textarea.form-control-lg {
   margin: auto;
   width: 40%;
   border: black;
-  height: 200px; }
+  height: 100%; }
   .card .image__wrapper img {
     width: 100%;
     height: 100px; }
@@ -8471,17 +8471,17 @@ textarea.form-control-lg {
   .card:not(:first-child) {
     display: none; }
   .card-body .card-title {
-    font-size: 0.7rem;
+    font-size: .9rem;
     font-weight: bold; }
   .card-body .card-text {
-    font-size: 0.5rem;
+    font-size: .7rem;
     font-weight: bold; }
   .card-body .btn__color__product {
     background-color: #813d81;
     color: white;
     padding: 5px 10px;
     border-radius: 40px;
-    font-size: 0.5rem; }
+    font-size: 0.7rem; }
     .card-body .btn__color__product:hover {
       background-color: #813d81; }
 
@@ -8753,13 +8753,18 @@ textarea.form-control-lg {
 
 .card-catalogo-bonsai {
   padding: 0%;
+  width: 15rem;
   height: fit-content;
   margin: 20px auto; }
   .card-catalogo-bonsai img {
-    height: 200px; }
+    height: 30vh; }
   .card-catalogo-bonsai:not(:first-child) {
     display: block; }
-  .card-catalogo-bonsai .btn {
+  .card-catalogo-bonsai .card-body .card-title {
+    font-size: 1.2rem; }
+  .card-catalogo-bonsai .card-body .card-text {
+    font-size: 1rem; }
+  .card-catalogo-bonsai .card-body .btn {
     border-radius: 40px; }
 
 .card-catalogo-kokedama {
@@ -8771,7 +8776,11 @@ textarea.form-control-lg {
     height: 300px; }
   .card-catalogo-kokedama:not(:first-child) {
     display: block; }
-  .card-catalogo-kokedama .btn {
+  .card-catalogo-kokedama .card-body .card-title {
+    font-size: 1.2rem; }
+  .card-catalogo-kokedama .card-body .card-text {
+    font-size: 1rem; }
+  .card-catalogo-kokedama .card-body .btn {
     border-radius: 40px; }
 
 .row-cards h2, .row-cards .h2 {
@@ -8780,8 +8789,10 @@ textarea.form-control-lg {
   text-decoration: underline; }
 
 @media (min-width: 768px) {
-  .row-cards .card-catalogo-kokedama {
-    width: 18rem; } }
+  .card-catalogo-bonsai {
+    width: 18rem; }
+    .card-catalogo-bonsai img {
+      height: 20vh; } }
 
 @media (min-width: 992px) {
   .row-cards h2, .row-cards .h2 {
@@ -8789,6 +8800,8 @@ textarea.form-control-lg {
   .row-cards .card-catalogo-bonsai {
     padding: 0%;
     height: auto; }
+    .row-cards .card-catalogo-bonsai img {
+      height: 30vh; }
   .row-cards .card-catalogo-kokedama {
     padding: 0%;
     height: auto; } }
