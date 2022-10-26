@@ -1,5 +1,5 @@
 #formulario {
-  background-color: rgb(236, 232, 232);
+  background-color: $bg-secondary;
   width: 100%;
   padding: 40px 0px;
   margin: auto;
@@ -25,7 +25,7 @@ form {
 }
 
 .map {
-  background-color: rgb(236, 232, 232);
+  background-color: $bg-secondary;
   text-align: center;
   padding-top: 40px;
   iframe {

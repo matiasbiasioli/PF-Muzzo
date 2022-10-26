@@ -41,7 +41,7 @@
   }
   .btn__color {
     background-color: $primary;
-    color: white;
+    color: $light;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 0.6rem;
@@ -49,7 +49,7 @@
     padding: 2px 8px;
     &:hover {
       background-color: $primary !important;
-      color: white !important;
+      color: $light !important;
     }
   }
 }
@@ -63,13 +63,13 @@
 /* Cards mobile */
 
 .productos {
-  background-color: rgb(236, 232, 232);
+  background-color: $bg-secondary;
 }
 
 .carousel-inner,
 .products__title {
   text-align: center;
-  background-color: rgb(236, 232, 232);
+  background-color: $bg-secondary;
 }
 
 .products__title {
@@ -93,7 +93,7 @@
   }
   &__wrapper {
     display: flex;
-    background-color: rgb(236, 232, 232);
+    background-color: $bg-secondary;
     margin: 40px 0px;
   }
   &:not(:first-child) {
@@ -110,7 +110,7 @@
     }
     .btn__color__product {
       background-color: $primary;
-      color: white;
+      color: $light;
       padding: 5px 10px;
       border-radius: 40px;
       font-size: 0.7rem;
@@ -242,7 +242,7 @@
     &__wrapper {
       display: flex;
       justify-content: center;
-      background-color: rgb(236, 232, 232);
+      background-color: $bg-secondary;
     }
     &:not(:first-child) {
       display: flex;
@@ -272,7 +272,7 @@
       transform: scale(1.1);
       transition: 0.5s;
       background-color: $primary !important;
-      color: white !important;
+      color: $light !important;
     }
   }
   .carousel-control {
